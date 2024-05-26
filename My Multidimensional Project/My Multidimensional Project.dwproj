@@ -24,12 +24,20 @@
       <FullPath>Time.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Geography.dim</Name>
-      <FullPath>Geography.dim</FullPath>
+      <Name>Manager Companies.dim</Name>
+      <FullPath>Manager COmpanies.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Products.dim</Name>
       <FullPath>Products.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Filter Leads.dim</Name>
+      <FullPath>Filter Leads.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Business Sectors.dim</Name>
+      <FullPath>Business Sectors.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

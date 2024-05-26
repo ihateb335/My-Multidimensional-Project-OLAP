@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f407940-bc6e-4cdd-b0dc-654ce1a6169a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d7f9a827-9a6f-4b0d-b58b-77de8e7e7dad" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Balancing Machines</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Leads</ID>
       <Partitions>
-        <Partition dwd:design-time-name="f1d27e21-98f4-4edf-8735-8ceb218cb956">
+        <Partition dwd:design-time-name="0eb09508-7c25-492d-8510-f3fb98622bdf">
           <ID>Leads</ID>
           <Name>Leads</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="429e089d-2962-4bcf-af09-7281c7c4ace6">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="923f4c48-0e78-4a96-bea1-5f1d89dd4008">
             <DataSourceViewID>Balancing Machines</DataSourceViewID>
             <TableID>dbo_Leads</TableID>
           </Source>
@@ -24,16 +24,36 @@
     <MeasureGroup>
       <ID>Companies</ID>
       <Partitions>
-        <Partition dwd:design-time-name="3bfe5395-e96e-4c0c-adc2-61fe3325779e">
+        <Partition dwd:design-time-name="ffc7abe5-812c-430f-890c-06a19433f92c">
           <ID>Companies</ID>
           <Name>Companies</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="52f4f529-a30c-43e8-9d8c-8312b0698df9">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b5837f99-e3b3-4de1-9c6b-913f6eeb43db">
             <DataSourceViewID>Balancing Machines</DataSourceViewID>
             <TableID>dbo_Companies</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Companies- Sectors Join Table</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0bcd08dc-1572-4e2e-84d3-aa94feede81f">
+          <ID>Companies- Sectors Join Table</ID>
+          <Name>Companies- Sectors Join Table</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6beb2847-0230-43e5-a17c-6789c6f7bf20">
+            <DataSourceViewID>Balancing Machines</DataSourceViewID>
+            <TableID>dbo_Companies_Sectors</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
