@@ -44,16 +44,36 @@
     <MeasureGroup>
       <ID>Companies- Sectors Join Table</ID>
       <Partitions>
-        <Partition dwd:design-time-name="0bcd08dc-1572-4e2e-84d3-aa94feede81f">
+        <Partition dwd:design-time-name="7b8ea7de-ce22-44a5-9d23-7eac6f2984c7">
           <ID>Companies- Sectors Join Table</ID>
           <Name>Companies- Sectors Join Table</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6beb2847-0230-43e5-a17c-6789c6f7bf20">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="da517497-6787-4c21-adc8-2625b3722673">
             <DataSourceViewID>Balancing Machines</DataSourceViewID>
             <TableID>dbo_Companies_Sectors</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Companies- Types Join Table</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1441f64b-ddf7-4414-b429-cdc8d855d416">
+          <ID>Companies- Types Join Table</ID>
+          <Name>Companies- Types Join Table</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2e086f19-ad22-43f9-993d-d26345e60452">
+            <DataSourceViewID>Balancing Machines</DataSourceViewID>
+            <TableID>dbo_Companies_Types</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>

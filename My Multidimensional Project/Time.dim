@@ -418,6 +418,7 @@
     <Hierarchy dwd:design-time-name="5cb99d4f-70c8-455a-83e1-3ab70b54bae7">
       <ID>Hierarchy 1</ID>
       <Name>Fiscal year by month</Name>
+      <DisplayFolder>Time</DisplayFolder>
       <Levels>
         <Level dwd:design-time-name="b640c755-b9cd-47fd-8652-491f807dab49">
           <ID>Fiscal Year</ID>
