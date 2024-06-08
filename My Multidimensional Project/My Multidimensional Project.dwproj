@@ -24,8 +24,8 @@
       <FullPath>Time.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Geography.dim</Name>
-      <FullPath>Geography.dim</FullPath>
+      <Name>Companies.dim</Name>
+      <FullPath>Companies.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Products.dim</Name>
